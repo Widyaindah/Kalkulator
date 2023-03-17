@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor = "pink">
+  <div class="container">
+    <h1>Kalkulator Sederhana</h1>
+    <form>
+      <input type="text" name="angka1" placeholder="Masukkan angka pertama">
+      <input type="text" name="angka2" placeholder="Masukkan angka kedua">
+      <br><br>
+      <label><input type="radio" name="operator" value="penjumlahan" checked> Penjumlahan (+)</label>
+      <label><input type="radio" name="operator" value="pengurangan"> Pengurangan (-)</label>
+      <label><input type="radio" name="operator" value="perkalian"> Perkalian (*)</label>
+      <label><input type="radio" name="operator" value="pembagian"> Pembagian (/)</label>
+      <label><input type="radio" name="operator" value="pangkat"> Pangkat (^)</label>
+      <br><br>
+      <button type="button" onclick="hitung()">Hitung</button>
+    </form>
+    <br><br>
+    <div id="hasil"></div>
+  </div>
+	<div id="popup" class="hidden">
+	  <p>Masukkan Angka!!!</p>
+	  <button onclick="hidePopup()">Tutup</button>
+	</div>
+  <script src="script.js"></script>
+</body>
+</html>
